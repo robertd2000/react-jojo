@@ -1,0 +1,40 @@
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgb(89, 44, 160);
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  color: aliceblue;
+  font-size: 30px;
+}
+
+.nav {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.nav_link {
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: top;
+  color: aliceblue;
+  margin: 0 15px;
+
+  position: relative;
+  transition: color 0.1s linear;
+}
+
+.nav_link:hover {
+  color: rgb(169, 40, 180);
+}
