@@ -1,18 +1,39 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 import './header.css'
+
+const data = [
+    {title: 'Главная', path: '/'},
+    {title: 'Часть', path: '/parts'},
+    {title: 'Персонажи', path: '/smt'},
+    {title: 'Опенинги', path: '/'},
+
+]
 
 const Nav = ({data}) => {
 
-    const links = 
+    const links =
         data.map((element, i) => {
-            // console.log(<a key={element} className="nav_link" href="#">{element}</a>);
-            return <a key={i} className="nav_link" href="#">{element}</a>
+            // console.log(<Link to={element.path} key={i} className="nav_link" href="#">{element.title}</Link>);
+            return (
+                <Link to={element.path} key={i} className="nav_link" href="#">{element.title}</Link>
+                )
         }
     )
 
+    console.log(links);
+
+    // return (
+    //     <nav className="nav">
+    //         {links}
+    //     </nav>)
+
     return (
         <nav className="nav">
-            {links}
+            <ul>
+                {links}
+            </ul>
+            
         </nav>)
 }
 
@@ -23,7 +44,9 @@ const Header = () => {
                 <div className="container">
                     <div className="header__inner">
                     <div className="header_logo">JoJo</div>
-                        <Nav data={['Главная', 'Часть', 'Персонажи', 'Опенинги', 'Отзывы']} />
+                        <Nav data={data} />
+
+
                     </div>
                 </div>
             </header>
