@@ -5,8 +5,8 @@ import './header.css'
 const data = [
     {title: 'Главная', path: '/'},
     {title: 'Часть', path: '/parts'},
-    {title: 'Персонажи', path: '/smt'},
-    {title: 'Опенинги', path: '/'},
+    {title: 'Персонажи', path: '/characters'},
+    {title: 'Отзывы', path: '/comments'},
 
 ]
 
@@ -23,17 +23,11 @@ const Nav = ({data}) => {
 
     console.log(links);
 
-    // return (
-    //     <nav className="nav">
-    //         {links}
-    //     </nav>)
-
     return (
         <nav className="nav">
             <ul>
                 {links}
             </ul>
-            
         </nav>)
 }
 
@@ -45,8 +39,6 @@ const Header = () => {
                     <div className="header__inner">
                     <div className="header_logo">JoJo</div>
                         <Nav data={data} />
-
-
                     </div>
                 </div>
             </header>
