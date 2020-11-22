@@ -1,0 +1,68 @@
+.nav__ul {
+  text-decoration: none;
+  list-style: none;
+  height: 50px;
+}
+
+.parts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.part_item_inner {
+  padding: 0px 15px;
+  color: aliceblue;
+  font-weight: 700;
+  font-size: 15px;
+  border-right: 1px solid #f36262;
+  font-family: arial; /*меняем шрифт*/
+  line-height: 50px; /*ровняем меню по вертикали*/
+  display: block;
+  background-color: rgb(197, 44, 133);
+  transition: all 0.3s linear;
+}
+
+.nav__ul li {
+  float: left; /*Размещаем список горизонтально для реализации меню*/
+}
+
+.part_item_inner:hover {
+  background-color: rgb(238, 30, 110);
+}
+
+.part__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70%;
+  margin: 20px auto;
+  border: 7px solid rgb(238, 21, 155);
+  padding: 20px;
+}
+
+.img__item {
+  width: 45%;
+  background-color: rgb(226, 243, 71);
+}
+
+.img__item img {
+  width: 65%;
+}
+
+.content__item {
+  width: 50%;
+  border: 5px solid rgb(226, 243, 71);
+  background-color: rgb(182, 20, 223);
+  color: rgb(219, 243, 200);
+  text-align: center;
+}
+
+.content__item h1 {
+  color: rgb(226, 243, 71);
+}
+
+.content__item p {
+  width: 80%;
+  margin: 10px auto;
+}

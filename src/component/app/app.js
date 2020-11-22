@@ -5,6 +5,7 @@ import Logo from '../logo';
 import Parts from '../parts';
 import Posts from '../posts';
 import Protagonists from '../protagonists';
+import PartsPage from '../pages/pageParts'
 
 
 const Contacts = () => (
@@ -19,8 +20,8 @@ function AppJS() {
       <Router>
         <Header/>
         <Logo/>
-        <Route exact path='/' />
-        <Route exact path='/parts' component={Parts} />
+        <Route exact path='/' component={Parts} />
+        <Route exact path='/parts' component={PartsPage} />
         <Route exact path='/characters' component={Protagonists} />
         <Route exact path='/comments' component={Posts} />
         <Clock/>
